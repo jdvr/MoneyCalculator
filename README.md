@@ -1,7 +1,7 @@
 MoneyCalculator
 ===============
 
-MoneyCalculator project for Softwaare engineer 2 
+MoneyCalculator project for Software engineer 2 
 
 This app allow user change from one currency to another.
 
