@@ -1,22 +1,28 @@
-package com.is2.moneycalculator;
+package com.is2.moneycalculator.model;
 
 public class Money {
     
-    private final Integer amount;
-    private final Currency currency;
+    private final Double amount;
+    private final Currency currencyType;
 
-    public Money(Integer amount, Currency currency) {
+    public Money(Double amount, Currency currencyType) {
         this.amount = amount;
-        this.currency = currency;
+        this.currencyType = currencyType;
     }
 
-    public Integer getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
     public Currency getCurrency() {
-        return currency;
+        return currencyType;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%f %s", amount, currencyType.getCode());
+    }
+    
     
     
     

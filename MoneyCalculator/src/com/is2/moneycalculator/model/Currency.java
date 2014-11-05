@@ -1,6 +1,6 @@
-package com.is2.moneycalculator;
+package com.is2.moneycalculator.model;
 
-class Currency {
+public class Currency {
 
      private final String name;
      private final String symbol;

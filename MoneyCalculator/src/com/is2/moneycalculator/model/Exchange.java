@@ -1,4 +1,4 @@
-package com.is2.moneycalculator;
+package com.is2.moneycalculator.model;
 
 import java.util.Date;
 
@@ -11,6 +11,7 @@ public class Exchange {
     public Exchange(Money money, Currency currency) {
         this.money = money;
         this.currency = currency;
+        this.date = new Date();
     }
 
     public Money getMoney() {
@@ -26,5 +27,5 @@ public class Exchange {
     }
     
     
-            
+        
 }
