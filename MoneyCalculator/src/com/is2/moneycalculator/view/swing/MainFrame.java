@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 public class MainFrame extends JFrame{
     private final Currency[] currencies;
     private ActionListener actionListener;
-    private ExchangeDialogPanel exchangeDialogPanel;
+    private ExchangeDialog exchangeDialog;
 
     public MainFrame(Currency[] currencies) {
         this.currencies = currencies;
@@ -37,10 +37,17 @@ public class MainFrame extends JFrame{
 
     private Component createExchangeDialogPanel() {
         ExchangeDialogPanel panel = new ExchangeDialogPanel(currencies);
-        this.exchangeDialogPanel = panel;
+        this.exchangeDialog = panel;
         return panel;
     }
     
+    public ExchangeDialog getExchangeDialog() {
+        return exchangeDialog;
+    }
+    
+    public void setListener(ActionListener actionListener){
+        this.actionListener = actionListener;
+    }
     
     
 }
