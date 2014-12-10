@@ -1,17 +1,13 @@
 package com.is2.moneycalculator.model.mock;
 
 import com.is2.moneycalculator.model.Currency;
-import java.util.HashSet;
-import java.util.Set;
+import com.is2.moneycalculator.model.CurrencySet;
 
-public class CurrencySetMocker {
+public class CurrencySetLoader implements com.is2.moneycalculator.persistence.CurrencySetLoader{
 
-    public CurrencySetMocker() {
-
-    }
-
-    public Set<Currency> loadMock() {
-        Set<Currency> res = new HashSet<>();
+    @Override
+    public CurrencySet load() {
+        CurrencySet res = new CurrencySet();
         res.add(new Currency("Euro", "€", "EUR"));
         res.add(new Currency("Dollar", "$", "USD"));
         res.add(new Currency("Peseta", "Pst", "PST"));

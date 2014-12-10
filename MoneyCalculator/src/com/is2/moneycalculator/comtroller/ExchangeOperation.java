@@ -1,17 +1,24 @@
 package com.is2.moneycalculator.comtroller;
 
-import com.is2.moneycalculator.view.MoneyDisplay;
+import com.is2.moneycalculator.view.ui.ExchangeDisplay;
+import com.is2.moneycalculator.view.ui.MoneyDisplay;
 import com.is2.moneycalculator.model.CurrencySet;
-import com.is2.moneycalculator.view.ExchangeDialog;
+import com.is2.moneycalculator.view.ui.ExchangeDialog;
 
 public class ExchangeOperation {
-    final private CurrencySet allCurrencies;
+    private final ExchangeDialog exchangeDialog;
+    private final ExchangeDisplay exchangedisplay;
 
-    public ExchangeOperation(CurrencySet allCurrencies) {
-        this.allCurrencies = allCurrencies;
+    public ExchangeOperation(ExchangeDialog exchangeDialog, ExchangeDisplay Exchangedisplay) {
+        this.exchangeDialog = exchangeDialog;
+        this.exchangedisplay = Exchangedisplay;
     }
     
+
+    
+    
     public void execute(){
+        exchangedisplay.display(exchangeDialog.getExchange().getMoney());
     }
     
     

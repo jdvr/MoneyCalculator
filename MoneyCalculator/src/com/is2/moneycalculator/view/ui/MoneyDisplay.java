@@ -1,4 +1,4 @@
-package com.is2.moneycalculator.view;
+package com.is2.moneycalculator.view.ui;
 
 import com.is2.moneycalculator.model.Money;
 

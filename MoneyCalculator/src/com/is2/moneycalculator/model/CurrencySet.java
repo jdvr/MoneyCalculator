@@ -1,26 +1,21 @@
 package com.is2.moneycalculator.model;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.function.Predicate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CurrencySet{
-    private Set<Currency> currencies;
-    
-    public CurrencySet(){
-        currencies = new HashSet<>();
+    private final List<Currency> list = new ArrayList<>();
+
+    public boolean add(Currency currency) {
+        return list.add(currency);
     }
-    
-    public void add(Currency newCurrency){
-        currencies.add(newCurrency);
+
+    public Currency get(int index) {
+        return list.get(index);
     }
-    
-    public Currency get(String currencyName){
-        final Predicate<Currency> nameFilter = currency -> currency.getName().equals(currencyName);
-        return currencies.stream()
-                         .filter(nameFilter)
-                         .findAny()
-                         .get();
+
+    public Currency[] toArray() {
+        return list.toArray(new Currency[list.size()]);
     }
     
 }
