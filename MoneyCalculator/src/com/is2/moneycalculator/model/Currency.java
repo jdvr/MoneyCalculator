@@ -1,24 +1,21 @@
 package com.is2.moneycalculator.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Currency {
 
-     private final String name;
-     private final String symbol;
-     private final String code;
+    @SerializedName("currencyName")
+    private final String name;
+    @SerializedName("id")
+    private final String code;
 
-    public Currency(String name, String symbol, String code) {
+    public Currency(String name, String code) {
         this.name = name;
-        this.symbol = symbol;
         this.code = code;
     }
-     
 
     public String getName() {
         return name;
-    }
-
-    public String getSymbol() {
-        return symbol;
     }
 
     public String getCode() {
@@ -27,10 +24,7 @@ public class Currency {
 
     @Override
     public String toString() {
-        return code;
+        return name;
     }
-    
-    
-     
-     
+
 }

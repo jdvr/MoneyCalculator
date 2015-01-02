@@ -1,4 +1,4 @@
-package com.is2.moneycalculator.model.mock;
+package com.is2.moneycalculator.mock;
 
 import com.is2.moneycalculator.model.Currency;
 import com.is2.moneycalculator.model.CurrencySet;
@@ -8,9 +8,9 @@ public class CurrencySetLoader implements com.is2.moneycalculator.persistence.Cu
     @Override
     public CurrencySet load() {
         CurrencySet res = new CurrencySet();
-        res.add(new Currency("Euro", "€", "EUR"));
-        res.add(new Currency("Dollar", "$", "USD"));
-        res.add(new Currency("Peseta", "Pst", "PST"));
+        res.add(new Currency("Euro", "EUR"));
+        res.add(new Currency("Dollar","USD"));
+        res.add(new Currency("Peseta", "PST"));
         return res;
     }
 
