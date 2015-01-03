@@ -19,13 +19,14 @@ public class ExchangeOperation {
     }
 
     public void execute() {
-
+        System.out.println(getExchangeRate().getRate());
         exchangedisplay.display(
                 new Exchanger().execute(exchangeDialog.getExchange().getMoney(), getExchangeRate()));
     }
 
     private ExchangeRate getExchangeRate() {
-        return exchangeRateSet.get(exchangeDialog.getExchange().getMoney().getCurrency(),
+        return exchangeRateSet.get(
+                exchangeDialog.getExchange().getMoney().getCurrency(),
                 exchangeDialog.getExchange().getCurrency());
     }
 

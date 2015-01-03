@@ -59,6 +59,7 @@ public class ExchangeDialogPanel extends JPanel implements ExchangeDialog{
     }
 
     private double getAmount() {
+        if(amount.getText().equals("") || amount.getText() == null) return 0.0;
         return Double.parseDouble(amount.getText());
     }
 
