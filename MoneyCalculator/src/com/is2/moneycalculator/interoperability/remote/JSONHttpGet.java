@@ -1,4 +1,4 @@
-package com.is2.moneycalculator.interoperability;
+package com.is2.moneycalculator.interoperability.remote;
 
 import java.io.BufferedReader;
 import java.io.IOException;

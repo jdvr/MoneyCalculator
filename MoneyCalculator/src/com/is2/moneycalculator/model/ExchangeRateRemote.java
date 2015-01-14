@@ -3,7 +3,7 @@ package com.is2.moneycalculator.model;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 import com.google.gson.reflect.TypeToken;
-import com.is2.moneycalculator.interoperability.JSONHttpGet;
+import com.is2.moneycalculator.interoperability.remote.JSONHttpGet;
 import java.util.Map;
 
 public class ExchangeRateRemote extends ExchangeRate {

@@ -1,4 +1,4 @@
-package com.is2.moneycalculator.interoperability;
+package com.is2.moneycalculator.interoperability.remote;
 
 import com.is2.moneycalculator.model.CurrencySet;
 import com.is2.moneycalculator.persistence.CurrencySetLoader;

@@ -1,4 +1,4 @@
-package com.is2.moneycalculator.interoperability;
+package com.is2.moneycalculator.interoperability.remote;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
