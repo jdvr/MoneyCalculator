@@ -5,6 +5,7 @@ MoneyCalculator project for Software engineer 2
 
 This app allow user change from one currency to another.
 For remote exchange rates the app uses free currencies converter api.
+Change Loader in Application.java to use Local or Remote Currency Converter Data Base
 * Models:
   * Currency
   * Exchange
